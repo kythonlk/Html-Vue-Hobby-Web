@@ -1,6 +1,5 @@
-# Html-Vue-Hobby-Web
+# Html-Vue-Book-Reading-Hobby-Web
 
-# library-management-system-python
 This is first release more updates coming soon...
 Simple CMD library management system created in python.This code can change any type of management system
 
