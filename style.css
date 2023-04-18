@@ -1,0 +1,288 @@
+html {
+  height: 100%;
+}
+
+main {
+  flex: 1;
+  background: linear-gradient(145deg, #fa49f1, #6423fc);
+}
+
+footer {
+  margin-top: auto;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+header {
+  background-color: #272727;
+  color: #ffffff;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+h1 {
+  font-size: 36px;
+  flex: 1;
+  margin: 0;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px;
+}
+
+a:hover {
+  background-color: #ffffff;
+  color: #272727;
+  transition: background-color 0.3s, color 0.3s;
+}
+.section-headings {
+  text-align: center;
+  color: #000;
+  font-size: 48px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+/* home page css */
+
+.hero {
+  position: relative;
+  height: 700px;
+  margin-bottom: 2em;
+}
+
+.hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.hero-text {
+  flex-basis: 50%;
+  padding: 0 40px;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 12px 24px;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #666;
+}
+
+.hero-image {
+  flex-basis: 40%;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+.hero-image:hover img {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+/* end of the home page hero css */
+
+/* book catalog css */
+.books-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.book-card {
+  width: calc(33.33% - 60px);
+  margin-bottom: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.book-card:hover {
+  transform: scale(1.05);
+}
+
+.book-card-image img {
+  width: 100%;
+  height: auto;
+}
+
+.book-card-details {
+  padding: 10px;
+  background-color: #f7f7f7;
+}
+
+.book-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.book-description {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.book-author {
+  font-size: 14px;
+  font-style: italic;
+}
+
+/* authers catalog css */
+.a-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  margin-top: 150px;
+}
+
+.a-col {
+  margin: 10px;
+}
+
+.a-card {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  background-color: #bbabab;
+  min-width: 300px;
+  min-height: 200px;
+}
+
+.a-card h4 {
+  margin-top: 10px;
+  font-size: 1.5em;
+}
+
+.a-card p {
+  margin-top: 5px;
+  font-style: italic;
+  font-size: 1em;
+}
+
+.a-card img {
+  display: block;
+  margin: 0 auto;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.a-card p.card-text {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.a-card .rounded-circle {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 250px;
+  height: 250px;
+  margin-top: -120px;
+}
+
+/* end of authers catalog css */
+
+/* footer css */
+footer {
+  background-color: #272727;
+  color: #ffffff;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-txt {
+  font-size: 18px;
+  font-style: italic;
+}
+
+/* Page heading section */
+.page-heading {
+  background-color: #f7f7f7;
+  padding: 50px;
+  text-align: center;
+  color: #000000;
+}
+.page-heading h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+.page-heading p {
+  font-size: 18px;
+  margin-bottom: 0;
+}

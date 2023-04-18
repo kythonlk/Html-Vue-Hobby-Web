@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Reading Books Hobbies - Feedback</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <style>
+      .form-group {
+        margin-bottom: 1rem;
+      }
+
+      label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 0.5rem;
+        font-size: 1rem;
+        border-radius: 0.25rem;
+        border: 1px solid #ccc;
+        box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+      }
+
+      button[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 0.25rem;
+        font-size: 1rem;
+        cursor: pointer;
+      }
+
+      table {
+        width: 100%;
+        margin-top: 2rem;
+        border-collapse: collapse;
+        margin-bottom: 1rem;
+      }
+
+      thead {
+        background-color: #f2f2f2;
+      }
+
+      th,
+      td {
+        padding: 0.5rem;
+        border: 1px solid #ccc;
+        text-align: left;
+      }
+
+      th {
+        font-weight: bold;
+      }
+
+      .feedback-form {
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header section this is same header for all pages -->
+    <header>
+      <h1>My Reading Books Hobbies</h1>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/books.html">Books</a></li>
+          <li><a href="/authors.html">Authors</a></li>
+          <li><a href="/feedback.html">Feedback</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="feedback-form">
+        <h2>Feedback from Visitors</h2>
+        <div id="app">
+          <form @submit.prevent="submitFeedback">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" v-model="feedback.name" required />
+            </div>
+            <div class="form-group">
+              <label for="name">Email:</label>
+              <input
+                type="email"
+                id="email"
+                v-model="feedback.email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="feedback">Feedback:</label>
+              <textarea
+                id="feedback"
+                v-model="feedback.feedback"
+                required
+              ></textarea>
+            </div>
+            <button type="submit">Submit Feedback</button>
+          </form>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Feedback</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr v-for="item in feedbacks">
+                <td>{{ item.name }}</td>
+                <td>{{ item.email }}</td>
+                <td>{{ item.feedback }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p class="footer-txt">&copy; 2023 My Reading Hobbies</p>
+    </footer>
+    <script>
+      new Vue({
+        el: "#app",
+        data: {
+          feedback: {
+            name: "",
+            email: "",
+            feedback: "",
+          },
+          feedbacks: [],
+        },
+        methods: {
+          submitFeedback() {
+            this.feedbacks.push(this.feedback);
+            this.feedback = {
+              name: "",
+              email: "",
+              feedback: "",
+            };
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
