@@ -1,7 +1,7 @@
 # Html-Vue-Book-Reading-Hobby-Web
 
 This is first release more updates coming soon...
-Simple CMD library management system created in python.This code can change any type of management system
+Book Reading Hobby Website theme developed using Html , Css ,Js ,Vue Js,Boostrap-5
 
 
 
