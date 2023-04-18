@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Reading Books Hobbies - Contact</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .contact {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 10px 0;
+      }
+
+      .contact h2 {
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+
+      .contact-details {
+        width: 100%;
+        max-width: 400px;
+        margin-bottom: 40px;
+        margin-left: 300px;
+      }
+
+      .contact-details ul {
+        list-style: none;
+        margin: 80px 0;
+        padding: 0;
+      }
+
+      .contact-details li {
+        margin-bottom: 10px;
+        font-size: 20px;
+      }
+
+      .contact-details i {
+        margin-right: 10px;
+        font-size: 24px;
+        color: #6423fc;
+      }
+
+      .contact-form {
+        width: 100%;
+        max-width: 500px;
+        margin-right: 140px;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 20px;
+      }
+
+      .form-group input,
+      .form-group textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+
+      .form-group textarea {
+        height: 150px;
+      }
+
+      button[type="submit"] {
+        background-color: #6423fc;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-size: 20px;
+        cursor: pointer;
+      }
+
+      button[type="submit"]:hover {
+        background-color: #fa49f1;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header section this is same header for all pages -->
+    <header>
+      <h1>My Reading Books Hobbies</h1>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/books.html">Books</a></li>
+          <li><a href="/authors.html">Authors</a></li>
+          <li><a href="/feedback.html">Feedback</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="page-heading">
+        <h1 style="">Contact Us</h1>
+        <p>Get in touch with us for any questions, comments or suggestions.</p>
+      </section>
+      <section class="contact">
+        <div class="contact-details">
+          <h2>Contact Details</h2>
+          <ul>
+            <li>Iresha De Silva</li>
+            <li>1st year Software Engineer Student</li>
+            <li>Student number : 555555555</li>
+            <li>Mini website project</li>
+          </ul>
+        </div>
+        <div class="contact-form">
+          <h2>Contact Form</h2>
+          <form>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p class="footer-txt">&copy; 2023 My Reading Hobbies</p>
+    </footer>
+  </body>
+</html>
