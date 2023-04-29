@@ -4,7 +4,7 @@ html {
 
 main {
   flex: 1;
-  background: linear-gradient(145deg, #fa49f1, #6423fc);
+ 
 }
 
 footer {
@@ -13,20 +13,11 @@ footer {
 
 body {
   font-family: "Segoe UI", sans-serif;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
+  overflow-x: hidden;
+  
 }
 
-header {
-  background-color: #272727;
-  color: #ffffff;
-  padding: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
+
 
 h1 {
   font-size: 36px;
@@ -34,21 +25,6 @@ h1 {
   margin: 0;
 }
 
-nav {
-  flex: 1;
-  text-align: right;
-}
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline-block;
-  margin-left: 20px;
-}
 
 a {
   color: #ffffff;
@@ -71,7 +47,7 @@ a:hover {
 }
 /* home page css */
 
-.hero {
+/* .hero {
   position: relative;
   height: 700px;
   margin-bottom: 2em;
@@ -144,7 +120,7 @@ a:hover {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 1;
-}
+} */
 /* end of the home page hero css */
 
 /* book catalog css */
