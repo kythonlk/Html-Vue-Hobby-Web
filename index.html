@@ -1,16 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <title>My Books Hobby - Books</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Reading Hobbies</title>
+    <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+
+    
   </head>
   <body>
-    <div id="books">
+    <div class="app bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500" style="">
     <!-- Header section this is same header for all pages -->
-    <header>
-      <div class="bg-gray-800 flex justify-between items-center px-4 py-3 md:px-20">
+    <header class="fixed inset-x-0 top-0 z-10">
+      <div class="bg-gray-800 bg-opacity-50 flex justify-between items-center px-4 py-3 md:px-20">
         <h1 class="text-white text-2xl">My Books</h1>
         <button type="button" class="block md:hidden text-white focus:outline-none" id="menu-toggle">
           <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
@@ -21,29 +24,50 @@
           <ul class="flex flex-col md:flex-row md:ml-auto">
             <li><a href="./index.html" class="px-2 py-1 text-white hover:bg-gray-700 hover:text-sky-300 hover:rounded-lg">Home</a></li>
             <li><a href="./books.html" class="px-2 py-1 text-white hover:bg-gray-700 hover:text-sky-300 hover:rounded-lg">Books</a></li>
-            <li><a href="./authors.html" class="px-2 py-1 text-white hover:bg-gray-700 hover:text-sky-300 hover:rounded-lg">Authors</a></li>
-            <li><a href="./feedback.html" class="px-2 py-1 text-white hover:bg-gray-700 hover:text-sky-300 hover:rounded-lg">Feedback</a></li>
-            <li><a href="./contact.html" class="px-2 py-1 text-white hover:bg-gray-700 hover:text-sky-300 hover:rounded-lg">Contact</a></li>
+            <li><a href="/authors.html" class="px-2 py-1 text-white hover:bg-gray-700 hover:text-sky-300 hover:rounded-lg">Authors</a></li>
+            <li><a href="/feedback.html" class="px-2 py-1 text-white hover:bg-gray-700 hover:text-sky-300 hover:rounded-lg">Feedback</a></li>
+            <li><a href="/contact.html" class="px-2 py-1 text-white hover:bg-gray-700 hover:text-sky-300 hover:rounded-lg">Contact</a></li>
           </ul>
         </nav>
       </div>
-      </nav>
     </header>
-    <main>
-      <section class="page-heading">
-        <h1 style="">My fav Books</h1>
-        <p>Get in touch with us for any questions, comments or suggestions.</p>
+    <main class="pt-24">
+      <section class="hero relative h-700 mb-8 py-8">
+        <div class="container mx-auto flex flex-wrap items-center justify-between h-full">
+          <div class="w-full md:w-1/2 px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4">
+              Discover Your Next Favorite Book
+            </h1>
+            <h5 class="text-lg md:text-xl mb-8">
+              Explore our selection of top-rated books and find your next great read.
+            </h5>
+            <p class="text-lg md:text-xl mb-12">
+              This website is dedicated to my love of reading. Here you'll find
+              information about the books, magazines, and comics that I enjoy reading,
+              as well as some of my thoughts and recommendations.
+            </p>
+            <a href="books.html" class="btn inline-block bg-gray-900 text-white py-3 px-6 rounded-lg text-lg hover:bg-gray-700">
+              View Books
+            </a>
+          </div>
+          <div class="w-full md:w-1/2 px-4">
+            <div class="flex justify-center  overflow-hidden">
+              <img class=" w-100 h-100 object-cover overflow-hidden transition duration-300 ease-in-out transform hover:scale-110" src="./assets/placehold-300x400.png" alt="Book Cover" />
+              
+              </div>
+            </div>
+          </div>
       </section>
-      <!-- Main Content Section -->
+      
       <section>
-        <h1 class="section-headings">Cato-1</h1>
+        <h1 class="section-headings">My Most favorite books</h1>
         <div class="books-container">
           <div
             class="book-card"
             onclick="window.location.href='book-page.html'"
           >
             <div class="book-card-image">
-              <img src="/assets/placehold-300x400.png" alt="Book 1" />
+              <img src="./assets/placehold-300x400.png" alt="Book 1" />
             </div>
             <div class="book-card-details">
               <h3 class="book-title">Book Title 1</h3>
@@ -59,7 +83,7 @@
             onclick="window.location.href='book-page.html'"
           >
             <div class="book-card-image">
-              <img src="/assets/placehold-300x400.png" alt="Book 2" />
+              <img src="./assets/placehold-300x400.png" alt="Book 2" />
             </div>
             <div class="book-card-details">
               <h3 class="book-title">Book Title 2</h3>
@@ -75,166 +99,7 @@
             onclick="window.location.href='book-page.html'"
           >
             <div class="book-card-image">
-              <img src="/assets/placehold-300x400.png" alt="Book 3" />
-            </div>
-            <div class="book-card-details">
-              <h3 class="book-title">Book Title 3</h3>
-              <p class="book-description">
-                This is a short description of the book. It contains about 20
-                words or less.
-              </p>
-              <p class="book-author">Author Name</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section>
-        <h1 class="section-headings">cato -2</h1>
-        <div class="books-container">
-          <div
-            class="book-card"
-            onclick="window.location.href='book-page.html'"
-          >
-            <div class="book-card-image">
-              <img src="/assets/placehold-300x400.png" alt="Book 1" />
-            </div>
-            <div class="book-card-details">
-              <h3 class="book-title">Book Title 1</h3>
-              <p class="book-description">
-                This is a short description of the book. It contains about 20
-                words or less.
-              </p>
-              <p class="book-author">Author Name</p>
-            </div>
-          </div>
-          <div
-            class="book-card"
-            onclick="window.location.href='book-page.html'"
-          >
-            <div class="book-card-image">
-              <img src="/assets/placehold-300x400.png" alt="Book 2" />
-            </div>
-            <div class="book-card-details">
-              <h3 class="book-title">Book Title 2</h3>
-              <p class="book-description">
-                This is a short description of the book. It contains about 20
-                words or less.
-              </p>
-              <p class="book-author">Author Name</p>
-            </div>
-          </div>
-          <div
-            class="book-card"
-            onclick="window.location.href='book-page.html'"
-          >
-            <div class="book-card-image">
-              <img src="/assets/placehold-300x400.png" alt="Book 3" />
-            </div>
-            <div class="book-card-details">
-              <h3 class="book-title">Book Title 3</h3>
-              <p class="book-description">
-                This is a short description of the book. It contains about 20
-                words or less.
-              </p>
-              <p class="book-author">Author Name</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section>
-        <h1 class="section-headings">cato -3</h1>
-        <div class="books-container">
-          <div
-            class="book-card"
-            onclick="window.location.href='book-page.html'"
-          >
-            <div class="book-card-image">
-              <img src="/assets/placehold-300x400.png" alt="Book 1" />
-            </div>
-            <div class="book-card-details">
-              <h3 class="book-title">Book Title 1</h3>
-              <p class="book-description">
-                This is a short description of the book. It contains about 20
-                words or less.
-              </p>
-              <p class="book-author">Author Name</p>
-            </div>
-          </div>
-          <div
-            class="book-card"
-            onclick="window.location.href='book-page.html'"
-          >
-            <div class="book-card-image">
-              <img src="/assets/placehold-300x400.png" alt="Book 2" />
-            </div>
-            <div class="book-card-details">
-              <h3 class="book-title">Book Title 2</h3>
-              <p class="book-description">
-                This is a short description of the book. It contains about 20
-                words or less.
-              </p>
-              <p class="book-author">Author Name</p>
-            </div>
-          </div>
-          <div
-            class="book-card"
-            onclick="window.location.href='book-page.html'"
-          >
-            <div class="book-card-image">
-              <img src="/assets/placehold-300x400.png" alt="Book 3" />
-            </div>
-            <div class="book-card-details">
-              <h3 class="book-title">Book Title 3</h3>
-              <p class="book-description">
-                This is a short description of the book. It contains about 20
-                words or less.
-              </p>
-              <p class="book-author">Author Name</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section>
-        <h1 class="section-headings">cato -4</h1>
-        <div class="books-container">
-          <div
-            class="book-card"
-            onclick="window.location.href='book-page.html'"
-          >
-            <div class="book-card-image">
-              <img src="/assets/placehold-300x400.png" alt="Book 1" />
-            </div>
-            <div class="book-card-details">
-              <h3 class="book-title">Book Title 1</h3>
-              <p class="book-description">
-                This is a short description of the book. It contains about 20
-                words or less.
-              </p>
-              <p class="book-author">Author Name</p>
-            </div>
-          </div>
-          <div
-            class="book-card"
-            onclick="window.location.href='book-page.html'"
-          >
-            <div class="book-card-image">
-              <img src="/assets/placehold-300x400.png" alt="Book 2" />
-            </div>
-            <div class="book-card-details">
-              <h3 class="book-title">Book Title 2</h3>
-              <p class="book-description">
-                This is a short description of the book. It contains about 20
-                words or less.
-              </p>
-              <p class="book-author">Author Name</p>
-            </div>
-          </div>
-          <div
-            class="book-card"
-            onclick="window.location.href='book-page.html'"
-          >
-            <div class="book-card-image">
-              <img src="/assets/placehold-300x400.png" alt="Book 3" />
+              <img src="./assets/placehold-300x400.png" alt="Book 3" />
             </div>
             <div class="book-card-details">
               <h3 class="book-title">Book Title 3</h3>
@@ -297,11 +162,18 @@
         </div>
       </section>
     </main>
-    <!-- Footer Section -->
     <footer>
-      <p class="footer-txt">&copy; 2023 My Reading Hobbies</p>
+      <p class="footer-txt">&copy; Kythonlk 2023 My Reading Hobbies</p>
     </footer>
   </div>
-    <script src="app.js"></script>
+    <script>
+      const menuToggle = document.getElementById('menu-toggle');
+      const menu = document.getElementById('menu');
+    
+      menuToggle.addEventListener('click', function() {
+        menu.classList.toggle('hidden');
+      });
+    </script>
+    <script src="script.js"></script>
   </body>
 </html>
